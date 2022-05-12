@@ -87,7 +87,7 @@ const BodyWrapper = () => {
               <img
                 onClick={() => navigate("/")}
                 className={classes.link}
-                src="/assets/logo.png"
+                src="/TechnologyChannelWebsite/assets/logo.png"
                 alt="logo"
                 style={{ width: "45px", height: "45px" }}
               />

@@ -38,7 +38,7 @@ const Dashboard = () => {
           >
             <DashboardPaper
               title="DART"
-              img="/assets/dart.png"
+              img="/TechnologyChannelWebsite/assets/dart.png"
               link="https://dart-tutorial.com/"
             />
           </Grid>
@@ -51,7 +51,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="GOLANG" img="/assets/golang.png" />
+            <DashboardPaper title="GOLANG" img="/TechnologyChannelWebsite/assets/golang.png" />
           </Grid>
           <Grid
             item
@@ -64,7 +64,7 @@ const Dashboard = () => {
           >
             <DashboardPaper
               title="JAVA"
-              img="/assets/java.png"
+              img="/TechnologyChannelWebsite/assets/java.png"
               link="https://javaguide.technologychannel.org/"
             />
           </Grid>
@@ -77,7 +77,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="C PROOGRAMMING" img="/assets/c.png" />
+            <DashboardPaper title="C PROOGRAMMING" img="/TechnologyChannelWebsite/assets/c.png" />
           </Grid>
           <Grid
             item
@@ -90,7 +90,7 @@ const Dashboard = () => {
           >
             <DashboardPaper
               title="Computer Basic"
-              img="/assets/computerbasic.png"
+              img="/TechnologyChannelWebsite/assets/computerbasic.png"
             />
           </Grid>
           <Grid
@@ -102,7 +102,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="C#" img="/assets/cSharp.png" />
+            <DashboardPaper title="C#" img="/TechnologyChannelWebsite/assets/cSharp.png" />
           </Grid>
           <Grid
             item
@@ -113,7 +113,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="SQL" img="/assets/sql.png" />
+            <DashboardPaper title="SQL" img="/TechnologyChannelWebsite/assets/sql.png" />
           </Grid>
         </Grid>
 
@@ -132,7 +132,7 @@ const Dashboard = () => {
           >
             <DashboardPaper
               title="Computer Basic Guide"
-              img="/assets/computerbasic.png"
+              img="/TechnologyChannelWebsite/assets/computerbasic.png"
               link="https://play.google.com/store/apps/details?id=computerbasicguide.com"
             />
           </Grid>
@@ -145,7 +145,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="Java Guide" img="/assets/java.png" />
+            <DashboardPaper title="Java Guide" img="/TechnologyChannelWebsite/assets/java.png" />
           </Grid>
           <Grid
             item
@@ -156,7 +156,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="HTML Guide" img="/assets/html.png" />
+            <DashboardPaper title="HTML Guide" img="/TechnologyChannelWebsite/assets/html.png" />
           </Grid>
         </Grid>
 
