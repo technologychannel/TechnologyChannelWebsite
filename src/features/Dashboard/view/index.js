@@ -10,17 +10,16 @@ const useStyles = makeStyles(() => ({
     margin: "auto",
   },
   app:{
-      marginTop:"16px",
+      marginTop:"32px",
   }
 }));
 
 const Dashboard = () => {
   const classes = useStyles();
   const matches = useMediaQuery('(min-width:1000px)');
-  const matches1 = useMediaQuery('(min-width:650px)');
+  const matches1 = useMediaQuery('(min-width:750px)');
   const matches2 = useMediaQuery('(min-width:450px)');
   const matches3 = useMediaQuery('(min-width:0px)');
-  console.log(matches)
   return (
     <>
       <Box className={classes.body}>
