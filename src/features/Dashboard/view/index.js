@@ -1,4 +1,3 @@
-import { useTheme } from "@emotion/react";
 import { Box, Grid, Typography, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
@@ -29,7 +28,7 @@ const Dashboard = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Tutorials</Typography>
           </Grid>
-          <Grid item xs={matches && 3 || matches1 && 4 || matches2 && 6 || matches3 && 12} >
+          <Grid item xs={matches && 3 || matches1 && 4 || matches2 && 6 || matches3 && 12}> 
             <DashboardPaper title="DART" img="/assets/dart.png" link="https://dart-tutorial.com/" />
           </Grid>
           <Grid item xs={matches && 3 || matches1 && 4 || matches2 && 6 || matches3 && 12}>
