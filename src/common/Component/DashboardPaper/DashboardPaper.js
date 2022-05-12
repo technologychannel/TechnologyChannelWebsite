@@ -1,11 +1,12 @@
 import { makeStyles, Paper, Typography } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
+import DialogBox from "../DialogBox";
 
 const useStyles = makeStyles(() => ({
   paper: {
     padding: "10px 20px",
     cursor: "pointer",
-    height:"100%"
+    height: "100%",
   },
   title: {
     fontSize: "16px",
@@ -18,22 +19,30 @@ const useStyles = makeStyles(() => ({
     height: "120px",
     width: "100%",
     objectFit: "contain",
-    padding:"10px 0",
+    padding: "10px 0",
   },
 }));
 
 function DashboardPaper(props) {
   const classes = useStyles();
+  const [coursehandler, setCoursehandler] = useState(false);
 
   const Redirect = (link) => {
     window.location.assign(link);
   };
   return (
     <>
+      <DialogBox
+        open={coursehandler}
+        handleClose={() => setCoursehandler(false)}
+        title="Couse will be soon available"
+      />
       <Paper
         className={classes.paper}
         elevation={4}
-        onClick={() => Redirect(props.link)}
+        onClick={() =>
+          props.link ? Redirect(props?.link) : setCoursehandler(true)
+        }
       >
         <Typography className={classes.title}>{props.title}</Typography>
         {props.img && (
