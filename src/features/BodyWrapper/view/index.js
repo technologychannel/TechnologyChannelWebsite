@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 // import SearchIcon from "@mui/icons-material/Search";
 import { Outlet, useNavigate } from "react-router-dom";
 import { BottomNavigation, makeStyles, Paper } from "@material-ui/core";
+import Logo from "../../../common/assets/logo.png"
 
 // const Search = styled("div")(({ theme }) => ({
 //   position: "relative",
@@ -87,7 +88,7 @@ const BodyWrapper = () => {
               <img
                 onClick={() => navigate("/")}
                 className={classes.link}
-                src="/TechnologyChannelWebsite/assets/logo.png"
+                src={Logo}
                 alt="logo"
                 style={{ width: "45px", height: "45px" }}
               />
