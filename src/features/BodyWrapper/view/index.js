@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { Outlet, useNavigate } from "react-router-dom";
-import { BottomNavigation, makeStyles } from "@material-ui/core";
+import { BottomNavigation, makeStyles, Paper } from "@material-ui/core";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -52,37 +52,48 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const useStyles = makeStyles(() => ({
-  root: {
-    backgroundColor: "#eaeded",
+  body: {
+    minHeight: "100vh",
     height: "100%",
+    backgroundColor: "#eaeded",
   },
   footer: {
     backgroundColor: "#110a0b",
     width: "100%",
-    marginTop: "40px",
     color: "#fff",
-    alignItems:"center",
+    alignItems: "center",
   },
-  link:{
-    cursor:"pointer"
-  }
+  link: {
+    cursor: "pointer",
+  },
+  bottom: {
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    right: 0,
+  },
 }));
 
 const BodyWrapper = () => {
   const classes = useStyles();
-  const navigate=useNavigate()
+  const navigate = useNavigate();
+
   return (
     <>
-      <Box className={classes.root}>
-        <Box sx={{ flexGrow: 1 }} mb={4}>
+      <Box className={classes.body}>
+        <Box sx={{ flexGrow: 1, height: "100%" }} mb={4}>
           <AppBar position="static" sx={{ backgroundColor: "#110a0b" }}>
             <Toolbar>
               <img
+                onClick={() => navigate("/")}
+                className={classes.link}
                 src="/assets/logo.png"
                 alt="logo"
                 style={{ width: "45px", height: "45px" }}
               />
               <Typography
+                className={classes.link}
+                onClick={() => navigate("/")}
                 variant="h5"
                 noWrap
                 component="div"
@@ -102,14 +113,28 @@ const BodyWrapper = () => {
             </Toolbar>
           </AppBar>
         </Box>
-        <Outlet />
-        <BottomNavigation className={classes.footer}>
-          <Typography>
-              <span onClick={()=>navigate("/aboutus")} className={classes.link}>About Us</span>
-            <span> | </span>
-              <span onClick={()=>navigate("/privacypolicy")} className={classes.link}>Privacy Policy</span>
-          </Typography>
-        </BottomNavigation>
+        <Box sx={{ pb: 15, height: "100%" }}>
+          <Outlet />
+        </Box>
+        <Paper className={classes.bottom} elevation={3}>
+          <BottomNavigation className={classes.footer}>
+            <Typography>
+              <span
+                onClick={() => navigate("/aboutus")}
+                className={classes.link}
+              >
+                About Us
+              </span>
+              <span> | </span>
+              <span
+                onClick={() => navigate("/privacypolicy")}
+                className={classes.link}
+              >
+                Privacy Policy
+              </span>
+            </Typography>
+          </BottomNavigation>
+        </Paper>
       </Box>
     </>
   );

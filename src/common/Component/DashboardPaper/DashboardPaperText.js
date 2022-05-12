@@ -5,24 +5,18 @@ const useStyles = makeStyles(() => ({
   paper: {
     padding: "10px 20px",
     cursor: "pointer",
-    height:"100%"
+    height:"100%",
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center"
   },
   title: {
     fontSize: "16px",
     fontWeight: 600,
   },
-  img: {
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
-    height: "120px",
-    width: "100%",
-    objectFit: "contain",
-    padding:"10px 0",
-  },
 }));
 
-function DashboardPaper(props) {
+function DashboardPaperText(props) {
   const classes = useStyles();
 
   const Redirect = (link) => {
@@ -36,12 +30,9 @@ function DashboardPaper(props) {
         onClick={() => Redirect(props.link)}
       >
         <Typography className={classes.title}>{props.title}</Typography>
-        {props.img && (
-          <img src={props.img} alt={props.title} className={classes.img} />
-        )}
       </Paper>
     </>
   );
 }
 
-export default DashboardPaper;
+export default DashboardPaperText;
