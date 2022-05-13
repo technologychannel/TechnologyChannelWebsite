@@ -1,6 +1,6 @@
 {
-  "homepage": "https://technologychannel.github.io/TechnologyChannelWebsite/",
-  "name": "bishworaj",
+  "homepage": "http://technologychannel.org/",
+  "name": "technologychannelwebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
