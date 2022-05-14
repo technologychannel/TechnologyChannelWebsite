@@ -181,7 +181,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="HTML Editoe" img={HTML} link="https://play.google.com/store/apps/details?id=htmleditorapp.thulotechnology.com" />
+            <DashboardPaper title="HTML Editor" img={HTML} link="https://play.google.com/store/apps/details?id=htmleditorapp.thulotechnology.com" />
           </Grid>
           <Grid
             item
