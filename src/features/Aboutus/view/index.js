@@ -1,11 +1,11 @@
-import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Box, Grid, Link, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 
 const useStyle = makeStyles(() => ({
   body: {
     width: "90%",
     margin: "auto",
-  }
+  },
 }));
 
 const Aboutus = () => {
@@ -22,9 +22,38 @@ const Aboutus = () => {
             technical skills.{" "}
           </Typography>
           <br />
-          <Typography variant="h5">
-            Contact Us: info@technologychannel.org
-          </Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={2}>
+              <Typography variant="h5">Contact Us :</Typography>
+            </Grid>
+            <Grid item xs={10}>
+              <Link variant="h5" href="mailto:info@technologychannel.org">
+                info@technologychannel.org
+              </Link>
+            </Grid>
+            <Grid item xs={2}>
+              <Typography variant="h5">Facebook :</Typography>
+            </Grid>
+            <Grid item xs={10}>
+              <Link
+                variant="h5"
+                href="https://www.facebook.com/technologychannelnepal"
+              >
+                https://www.facebook.com/technologychannelnepal
+              </Link>
+            </Grid>
+            <Grid item xs={2}>
+              <Typography variant="h5">Facebook Group :</Typography>
+            </Grid>
+            <Grid item xs={10}>
+              <Link
+                variant="h5"
+                href=" https://www.facebook.com/groups/technologychannel"
+              >
+                https://www.facebook.com/groups/technologychannel
+              </Link>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </>

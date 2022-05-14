@@ -11,6 +11,8 @@ import ComputerBasic from "../../../common/assets/computerbasic.png"
 import CSharp from "../../../common/assets/cSharp.png"
 import SQL from "../../../common/assets/sql.png"
 import HTML from "../../../common/assets/html.png"
+import JSON from "../../../common/assets/json.png"
+import ComputerOperator from "../../../common/assets/computeroperator.png"
 
 const useStyles = makeStyles(() => ({
   body: {
@@ -45,9 +47,38 @@ const Dashboard = () => {
             }
           >
             <DashboardPaper
+              title="JAVA"
+              img={Java}
+              link="https://javaguide.technologychannel.org/"
+            />
+          </Grid>
+          <Grid
+            item
+            xs={
+              (matches && 3) ||
+              (matches1 && 4) ||
+              (matches2 && 6) ||
+              (matches3 && 12)
+            }
+          >
+            <DashboardPaper
+              title="JSON"
+              img={JSON}
+              link="https://jsonguide.technologychannel.org/"
+            />
+          </Grid>
+          <Grid
+            item
+            xs={
+              (matches && 3) ||
+              (matches1 && 4) ||
+              (matches2 && 6) ||
+              (matches3 && 12)
+            }
+          >
+            <DashboardPaper
               title="DART"
               img={Dart}
-              link="https://dart-tutorial.com/"
             />
           </Grid>
           <Grid
@@ -60,21 +91,6 @@ const Dashboard = () => {
             }
           >
             <DashboardPaper title="GOLANG" img={Golan}/>
-          </Grid>
-          <Grid
-            item
-            xs={
-              (matches && 3) ||
-              (matches1 && 4) ||
-              (matches2 && 6) ||
-              (matches3 && 12)
-            }
-          >
-            <DashboardPaper
-              title="JAVA"
-              img={Java}
-              link="https://javaguide.technologychannel.org/"
-            />
           </Grid>
           <Grid
             item
@@ -153,7 +169,19 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="Java Guide" img={Java} />
+            <DashboardPaper title="Computer Operator MCQ" img={ComputerOperator} link="https://play.google.com/store/apps/details?id=computeroperatormcq.com" />
+          </Grid>
+          
+          <Grid
+            item
+            xs={
+              (matches && 3) ||
+              (matches1 && 4) ||
+              (matches2 && 6) ||
+              (matches3 && 12)
+            }
+          >
+            <DashboardPaper title="HTML Editoe" img={HTML} link="https://play.google.com/store/apps/details?id=htmleditorapp.thulotechnology.com" />
           </Grid>
           <Grid
             item
@@ -164,7 +192,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="HTML Guide" img={HTML} />
+            <DashboardPaper title="Java Guide" img={Java} />
           </Grid>
         </Grid>
 
@@ -181,7 +209,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="Privacy Policy Generator" />
+            <DashboardPaperText title="QR Generator" link="https://qrgenerator.technologychannel.org/" />
           </Grid>
           <Grid
             item
@@ -192,7 +220,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="Color Picker" />
+            <DashboardPaperText title="Color Picker" link="https://colorpicker.technologychannel.org/" />
           </Grid>
           <Grid
             item
@@ -231,7 +259,18 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="JAVA Quiz" />
+            <DashboardPaperText title="JAVA Quiz" link="https://quiz.technologychannel.org/java_basic_quiz" />
+          </Grid>
+          <Grid
+            item
+            xs={
+              (matches && 3) ||
+              (matches1 && 4) ||
+              (matches2 && 6) ||
+              (matches3 && 12)
+            }
+          >
+            <DashboardPaperText title="Dart Quiz" link="https://quiz.technologychannel.org/dart_basic_quiz" />
           </Grid>
           <Grid
             item
@@ -243,17 +282,6 @@ const Dashboard = () => {
             }
           >
             <DashboardPaperText title="SQL Quiz" />
-          </Grid>
-          <Grid
-            item
-            xs={
-              (matches && 3) ||
-              (matches1 && 4) ||
-              (matches2 && 6) ||
-              (matches3 && 12)
-            }
-          >
-            <DashboardPaperText title="Dart Quiz" />
           </Grid>
           <Grid
             item
