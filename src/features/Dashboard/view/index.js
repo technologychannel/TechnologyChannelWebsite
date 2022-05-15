@@ -231,7 +231,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="About Us Generator" />
+            <DashboardPaperText title="Motivational Quotes Api" link="https://jsonguide.technologychannel.org/quotes.json" />
           </Grid>
           <Grid
             item
