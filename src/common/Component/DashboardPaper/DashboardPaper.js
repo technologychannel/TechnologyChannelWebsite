@@ -35,7 +35,7 @@ function DashboardPaper(props) {
       <DialogBox
         open={coursehandler}
         handleClose={() => setCoursehandler(false)}
-        title="Couse will be soon available"
+        title="Course will be soon available"
       />
       <Paper
         className={classes.paper}
