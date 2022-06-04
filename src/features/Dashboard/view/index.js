@@ -209,7 +209,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="All Tools" link="https://apps.technologychannel.org/" />
+            <DashboardPaperText title="All Tools" link="https://tools.technologychannel.org/" />
           </Grid>
           <Grid
             item
