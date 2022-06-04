@@ -209,7 +209,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="QR Generator" link="https://qrgenerator.technologychannel.org/" />
+            <DashboardPaperText title="All Tools" link="https://apps.technologychannel.org/" />
           </Grid>
           <Grid
             item
