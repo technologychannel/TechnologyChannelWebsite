@@ -65,7 +65,8 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
   },
   link: {
-    cursor: "pointer",
+    textDecoration:"none",
+    color:"#fff"
   },
   bottom: {
     position: "fixed",
@@ -120,19 +121,19 @@ const BodyWrapper = () => {
         <Paper className={classes.bottom} elevation={3}>
           <BottomNavigation className={classes.footer}>
             <Typography>
-              <span
-                onClick={() => navigate("/aboutus")}
+              <a
+                href="https://aboutus.technologychannel.org/"
                 className={classes.link}
               >
                 About Us
-              </span>
+              </a>
               <span> | </span>
-              <span
-                onClick={() => navigate("/privacypolicy")}
+              <a
+                href="https://privacypolicy.technologychannel.org/"
                 className={classes.link}
               >
                 Privacy Policy
-              </span>
+              </a>
             </Typography>
           </BottomNavigation>
         </Paper>

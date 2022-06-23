@@ -3,16 +3,16 @@ import { makeStyles } from "@material-ui/styles";
 import React from "react";
 import DashboardPaper from "../../../common/Component/DashboardPaper/DashboardPaper";
 import DashboardPaperText from "../../../common/Component/DashboardPaper/DashboardPaperText";
-import Dart from "../../../common/assets/dart.png"
-import Golan from "../../../common/assets/golang.png"
-import Java from "../../../common/assets/java.png"
-import C from "../../../common/assets/c.png"
-import ComputerBasic from "../../../common/assets/computerbasic.png"
-import CSharp from "../../../common/assets/cSharp.png"
-import SQL from "../../../common/assets/sql.png"
-import HTML from "../../../common/assets/html.png"
-import JSON from "../../../common/assets/json.png"
-import ComputerOperator from "../../../common/assets/computeroperator.png"
+import Dart from "../../../common/assets/dart.png";
+import Golan from "../../../common/assets/golang.png";
+import Java from "../../../common/assets/java.png";
+import C from "../../../common/assets/c.png";
+import ComputerBasic from "../../../common/assets/computerbasic.png";
+import CSharp from "../../../common/assets/cSharp.png";
+import SQL from "../../../common/assets/sql.png";
+import HTML from "../../../common/assets/html.png";
+import JSON from "../../../common/assets/json.png";
+import ComputerOperator from "../../../common/assets/computeroperator.png";
 
 const useStyles = makeStyles(() => ({
   body: {
@@ -36,6 +36,21 @@ const Dashboard = () => {
         <Grid container spacing={4}>
           <Grid item xs={12}>
             <Typography variant="h3">Tutorials</Typography>
+          </Grid>
+          <Grid
+            item
+            xs={
+              (matches && 3) ||
+              (matches1 && 4) ||
+              (matches2 && 6) ||
+              (matches3 && 12)
+            }
+          >
+            <DashboardPaper
+              title="DART"
+              img={Dart}
+              link="https://dart-tutorial.com/"
+            />
           </Grid>
           <Grid
             item
@@ -76,21 +91,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper
-              title="DART"
-              img={Dart}
-            />
-          </Grid>
-          <Grid
-            item
-            xs={
-              (matches && 3) ||
-              (matches1 && 4) ||
-              (matches2 && 6) ||
-              (matches3 && 12)
-            }
-          >
-            <DashboardPaper title="GOLANG" img={Golan}/>
+            <DashboardPaper title="GOLANG" img={Golan} />
           </Grid>
           <Grid
             item
@@ -112,10 +113,7 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper
-              title="Computer Basic"
-              img={ComputerBasic}
-            />
+            <DashboardPaper title="Computer Basic" img={ComputerBasic} />
           </Grid>
           <Grid
             item
@@ -169,9 +167,13 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="Computer Operator MCQ" img={ComputerOperator} link="https://play.google.com/store/apps/details?id=computeroperatormcq.com" />
+            <DashboardPaper
+              title="Computer Operator MCQ"
+              img={ComputerOperator}
+              link="https://play.google.com/store/apps/details?id=computeroperatormcq.com"
+            />
           </Grid>
-          
+
           <Grid
             item
             xs={
@@ -181,7 +183,11 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaper title="HTML Editor" img={HTML} link="https://play.google.com/store/apps/details?id=htmleditorapp.thulotechnology.com" />
+            <DashboardPaper
+              title="HTML Editor"
+              img={HTML}
+              link="https://play.google.com/store/apps/details?id=htmleditorapp.thulotechnology.com"
+            />
           </Grid>
           <Grid
             item
@@ -209,7 +215,10 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="All Tools" link="https://tools.technologychannel.org/" />
+            <DashboardPaperText
+              title="All Tools"
+              link="https://tools.technologychannel.org/"
+            />
           </Grid>
           <Grid
             item
@@ -220,7 +229,10 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="Color Picker" link="https://colorpicker.technologychannel.org/" />
+            <DashboardPaperText
+              title="Color Picker"
+              link="https://colorpicker.technologychannel.org/"
+            />
           </Grid>
           <Grid
             item
@@ -231,7 +243,10 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="Motivational Quotes Api" link="https://jsonguide.technologychannel.org/quotes.json" />
+            <DashboardPaperText
+              title="Motivational Quotes Api"
+              link="https://jsonguide.technologychannel.org/quotes.json"
+            />
           </Grid>
           <Grid
             item
@@ -259,7 +274,10 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="JAVA Quiz" link="https://quiz.technologychannel.org/java_basic_quiz" />
+            <DashboardPaperText
+              title="JAVA Quiz"
+              link="https://quiz.technologychannel.org/java_basic_quiz"
+            />
           </Grid>
           <Grid
             item
@@ -270,7 +288,10 @@ const Dashboard = () => {
               (matches3 && 12)
             }
           >
-            <DashboardPaperText title="Dart Quiz" link="https://quiz.technologychannel.org/dart_basic_quiz" />
+            <DashboardPaperText
+              title="Dart Quiz"
+              link="https://quiz.technologychannel.org/dart_basic_quiz"
+            />
           </Grid>
           <Grid
             item
